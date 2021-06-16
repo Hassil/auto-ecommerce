@@ -36,3 +36,6 @@ Log console and log
       ${_timestamp} =    BuiltIn.Get Time
       BuiltIn.Log  ${message}
       BuiltIn.Log To Console  ${_timestamp} -- ${message}
+
+Configuracion test
+      SeleniumLibrary.Set Screenshot Directory     ${EXECDIR}\\Evidencia
