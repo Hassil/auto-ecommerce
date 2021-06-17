@@ -18,3 +18,16 @@ Seleccionar opción
      SeleniumLibrary.Capture Page Screenshot      opcion_seleccionada.png
      BuiltIn.Set Test Variable    ${_STEP}    Se mostró la pantalla ${opcion}
      Step    ${_STEP}
+
+Iniciar sesion
+     [Arguments]      ${correo_celular}    ${contrasena}
+     Seleccionar menu inicia sesión
+     Seleccionar opción      ${_opcion_iniciar_sesion}     ${_btn_opcion_iniciar_sesion}      ${_label_iniciar_sesion}
+     SeleniumLibrary.Input Text    ${_input_Correo_celular}    ${correo_celular}
+     SeleniumLibrary.Input Password    ${_input_contrasena}    ${contrasena}
+     SeleniumLibrary.Capture Page Screenshot     iniciar_sesion.png
+     BuiltIn.Set Test Variable    ${_STEP}    Se ingresan credenciales de ${correo_celular}
+     Step    ${_STEP}
+     SeleniumLibrary.Click Element    ${_button_iniciar_sesion}
+     BuiltIn.Set Test Variable    ${_STEP}    Se hace login
+     Step    ${_STEP}
