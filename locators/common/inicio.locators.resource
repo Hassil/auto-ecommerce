@@ -8,7 +8,6 @@ ${_label_crear_cuenta}                //div[@id='WC_UserRegistrationAddForm_div_
 ${_opcion_iniciar_sesion}             Iniciar sesión
 ${_label_login}                       //span[ @class='login-title']
 
-${_opcion_iniciar_sesion}             Iniciar sesion
 ${_btn_opcion_iniciar_sesion}         //a[@data-nd3='Iniciar sesión' and  @id='signInQuickLink']
 ${_label_iniciar_sesion}              //span[contains(text(),'Inicia sesión con tu correo')]
 ${_input_Correo_celular}              //input[@name='logonId']

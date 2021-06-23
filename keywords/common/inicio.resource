@@ -23,11 +23,13 @@ Iniciar sesión
      [Arguments]      ${correo_celular}    ${contrasena}
      Seleccionar menu inicia sesión
      Seleccionar opción      ${_opcion_iniciar_sesion}     ${_btn_opcion_iniciar_sesion}      ${_label_iniciar_sesion}
+     SeleniumLibrary.Wait Until Element Is Visible    ${_input_Correo_celular}     ${_timeout}
      SeleniumLibrary.Input Text    ${_input_Correo_celular}    ${correo_celular}
      SeleniumLibrary.Input Password    ${_input_contrasena}    ${contrasena}
      SeleniumLibrary.Capture Page Screenshot     iniciar_sesion.png
      BuiltIn.Set Test Variable    ${_STEP}    Se ingresan credenciales de ${correo_celular}
      Step    ${_STEP}
+     SeleniumLibrary.Wait Until Element Is Visible    ${_button_iniciar_sesion}     ${_timeout}
      SeleniumLibrary.Click Element    ${_button_iniciar_sesion}
      BuiltIn.Set Test Variable    ${_STEP}    Se hace login
      Step    ${_STEP}

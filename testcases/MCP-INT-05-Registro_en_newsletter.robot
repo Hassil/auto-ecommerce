@@ -1,7 +1,5 @@
 *** Settings ***
 Resource    ../keywords/common/load_components.resource
-Resource    ../keywords/business/registro_en_newsletter.resource
-Resource    ../locators/business/registro_en_newsletter.locators.resource
 
 *** Test Cases ***
 
@@ -12,4 +10,4 @@ Registro en newsletter
       Configuracion test
       Ingresar a la pagina
       Inscribir newsletter    ${_DATA}[_correo_newsletter]
-      Close Browser
+      Cerrar navegador
