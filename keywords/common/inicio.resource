@@ -19,7 +19,7 @@ Seleccionar opción
      BuiltIn.Set Test Variable    ${_STEP}    Se mostró la pantalla ${opcion}
      Step    ${_STEP}
 
-Iniciar sesion
+Iniciar sesión
      [Arguments]      ${correo_celular}    ${contrasena}
      Seleccionar menu inicia sesión
      Seleccionar opción      ${_opcion_iniciar_sesion}     ${_btn_opcion_iniciar_sesion}      ${_label_iniciar_sesion}
