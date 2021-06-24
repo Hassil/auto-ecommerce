@@ -2,7 +2,7 @@
 Resource    load_components.resource
 
 *** Variables ***
-${RUTA_DATA_EXCEL}         ${CURDIR}${/}..${/}..${/}testdata${/}coppel-data.xlsx
+#${RUTA_DATA_EXCEL}         ${CURDIR}${/}..${/}..${/}testdata${/}coppel-data.xlsx
 
 *** Keywords ***
 
