@@ -1,5 +1,4 @@
 *** Variables ***
-
 ${_txt_nombre}                //input[@id='WC_UserRegistrationAddForm_NameEntryForm_FormInput_firstName_1']
 ${_txt_apellido}              //input[@id='WC_UserRegistrationAddForm_NameEntryForm_FormInput_lastName_1']
 ${_txt_celular_correo}        //input[@id='WC_UserRegistrationAddForm_FormInput_email1_In_Register_1']
