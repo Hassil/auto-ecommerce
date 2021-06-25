@@ -12,8 +12,8 @@ telefono liga a tu cuenta
    Ingresar a la pagina
    Seleccionar menu inicia sesión
    Seleccionar opción   ${_opcion_iniciar_sesion}   ${_btn_inicar_sesion}   ${_label_login}
-   Iniciar sesion
+   Iniciar sesión
    Cerrar cuadro informativo
    Click en el link agregar celular
    Liga tu numero telefonico a tu cuenta
-   #Cerrar navegador
+   Cerrar navegador

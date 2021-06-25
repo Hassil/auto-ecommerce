@@ -10,7 +10,6 @@ Resource      common.resource
 Resource      ../../locators/common/common.locators.resource
 Resource      ../../locators/common/inicio.locators.resource
 Resource      ../../locators/common/excel.locators.resource
-Resource      inicio_sesion.resource
 Resource      ../../locators/common/inicio_sesion.locators.resource
 Resource      ../business/credito_coppel.resource
 Resource      ../../locators/common/credito_coppel.locators.resource
