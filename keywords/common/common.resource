@@ -43,4 +43,5 @@ Log console and log
       BuiltIn.Log To Console  ${_timestamp} -- ${message}
 
 Configuracion test
-      SeleniumLibrary.Set Screenshot Directory     ${EXECDIR}\\Evidencia
+      SeleniumLibrary.Set Screenshot Directory     ${EXECDIR}/Evidencia
+      #SeleniumLibrary.Set Screenshot Directory     ${EXECDIR}\\Evidencia
