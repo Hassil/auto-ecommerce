@@ -4,7 +4,7 @@ Resource    ../common/load_components.resource
 *** Keywords ***
 
 Capturar nombre completo
-      SeleniumLibrary.Wait Until Element Is Visible   ${_txt_nombre}      ${TIMEOUT}
+      SeleniumLibrary.Wait Until Element Is Visible   ${_txt_nombre}      ${_timeout}
       SeleniumLibrary.Input Text      ${_txt_nombre}    ${_DATA}[_nombre]
       BuiltIn.Set Test Variable    ${_STEP}      Se ingresó el dato ${_DATA}[_nombre] en el campo Nombre(s).
       Step    ${_STEP}

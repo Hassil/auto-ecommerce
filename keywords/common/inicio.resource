@@ -20,16 +20,12 @@ Seleccionar opción
      Step    ${_STEP}
 
 Iniciar sesión
-
-      SeleniumLibrary.Wait Until Element Is Visible    ${_input_user_name}    ${TIMEOUT}
+      SeleniumLibrary.Wait Until Element Is Visible    ${_input_user_name}    ${_timeout}
       SeleniumLibrary.Input Text    ${_input_user_name}     ${_DATA}[_usuario]
-      BuiltIn.Set Test Variable    ${_STEP}    Usuario Ingresado
+      BuiltIn.Set Test Variable    ${_STEP}    Se ingresó el Usuario ${_DATA}[_usuario]
       Step    ${_STEP}
       SeleniumLibrary.Input Text    ${_input_password}    ${_DATA}[_password]
-      BuiltIn.Set Test Variable    ${_STEP}    Contraseña Ingresada
+      BuiltIn.Set Test Variable    ${_STEP}    Se ingresó la Contraseña ${_DATA}[_password]
       Step    ${_STEP}
+      SeleniumLibrary.Capture Page Screenshot       credenciales_login.png
       SeleniumLibrary.Click Element    ${_btn_login}
-      Capture Page Screenshot
-
-
-     

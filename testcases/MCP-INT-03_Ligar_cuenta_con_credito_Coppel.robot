@@ -13,6 +13,6 @@ Ligar cuenta con credito coppel
       Ingresar a la pagina
       Seleccionar menu inicia sesión
       Seleccionar opción   ${_opcion_iniciar_sesion}   ${_btn_inicar_sesion}   ${_label_login}
-      Iniciar sesion
+      Iniciar sesión
       Registro tu credito coppel
       Cerrar navegador
