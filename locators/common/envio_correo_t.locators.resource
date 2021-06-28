@@ -1,0 +1,33 @@
+***Variables***
+
+${_frame_buscar}   //input[@id="SimpleSearchForm_SearchTerm"]
+${_btn_buscar}   //button[@data-nd2="Buscar"]
+${_btn_comprar}   //a[@id="add2CartBtn"]
+#${_btn_comprar}    //a[@id="add2CartBtn_959093"]
+#${_btn_comprarpa}   //a[@id="WC_QuickInfo_Link_addtocart"]
+${_btn_continuar_compra}   //a[@id="GotoCartButton2"]
+${_btn_pagar}   //button[@class="btn btn-primary limit-disabled"]
+${_btn_continuar}   //a[@data-nd2="Continuar"]
+
+${_txt_correo}   //input[@name="email1"]
+${_txt_nombre}   //input[@id="WC__ShoppingCartAddressEntryForm_billing_firstName_1"]
+${_txt_apellidos}   //input[@id="WC__ShoppingCartAddressEntryForm_billing_lastName_1"]
+${_txt_telefono}   //input[@id="phone1"]
+
+${_txt_calle}   //div[@class="group inputPlaceholder form-group has-feedback"]//input[@id="addressField1"]
+${_txt_numero_e}   //input[@id="address3"]
+${_txt_cp}   //input[@id="WC__ShoppingCartAddressEntryForm_billing_zipCode_1"]
+${_txt_colonia}    //input[@id="colonia"]
+${_btn_lista}    //ul[@id="coloniaxdatalist"]
+${_btn_dato_col}     //li[contains(text(),'NUEVA TULTITLAN')]
+${_txt_estado}   //select[@id="state"]
+${_txt_ciudad_municipio}   //select[@id="city"]
+${_txt_entre_calles}    //div[@id="WC_billing_entrecalles_div_15"]//input[@id="address2"]
+${_txt_referencias}   //input[@id="address1"]
+${_btn_forma_pago}    //label[@onclick="elegirPago()"]
+
+${_btn_metodo_pago}    //select[@class="billing_options clearfix form-control"]
+${_btn_efect_establecimeinto}    //select[@id="listPaymentMethod"]//option[@value="PayU"]
+${_btn_bancoppel}   //div[@id="pago_bancoppel"]//input[@onclick="changeMethodEfectivo(this.value,1)"]
+${_btn_revisar_orden}   //div[@id="button_payu"]//a[@role="button"]
+${_btn_confirmar_compra}   //a[@id="singleOrderSummary"]
