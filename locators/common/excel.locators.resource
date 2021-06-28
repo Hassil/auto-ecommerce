@@ -1,5 +1,5 @@
 *** Variables ***
-
+${_nombre_hoja_mcp_06}      MCP-INT-06
 ${_nombre_hoja_mcp_01}      MCP-INT-01
 ${_nombre_hoja_mcp_02}      MCP-INT-02
 ${_mcp_int_03}              MCP-INT-03
