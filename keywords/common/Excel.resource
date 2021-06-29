@@ -28,6 +28,7 @@ Leer archivo excel
 
 Check input data row count
     [Arguments]    ${file}    ${testname}    ${sheet_name}
+    BuiltIn.Log To Console   ${file}
     Open Excel Document     ${file}     ${testname}    #Open Excel File
     ${UsedRow}=    Count Row    ${sheet_name}    #Get used row count
     Set Suite Variable    ${UsedRow}
