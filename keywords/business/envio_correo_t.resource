@@ -14,15 +14,16 @@ Buscar un articulo
       Step    ${STEP}
 
 Comprar un articulo
+      SeleniumLibrary.Wait Until Element Is Visible   ${_btn_comprar}   ${TIMEOUT}
       SeleniumLibrary.Click Element    ${_btn_comprar}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Comprar
       Step    ${STEP}
-      Wait Until Element Is Visible    ${_btn_continuar_compra}    ${TIMEOUT}
+      SeleniumLibrary.Wait Until Element Is Visible    ${_btn_continuar_compra}    ${TIMEOUT}
 
       SeleniumLibrary.Click Element   ${_btn_continuar_compra}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Continuar con la Compra
       Step    ${STEP}
-      Wait Until Element Is Visible    ${_btn_pagar}    ${TIMEOUT}
+      SeleniumLibrary.Wait Until Element Is Visible    ${_btn_pagar}    ${TIMEOUT}
 
       SeleniumLibrary.Click Element    ${_btn_pagar}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Pagar
