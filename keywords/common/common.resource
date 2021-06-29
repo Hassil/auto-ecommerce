@@ -4,11 +4,6 @@ Resource      load_components.resource
 *** Variables ***
 ${_step_number}    0
 
-#***Keywords***
-#Abrir explorador
-#        Open Browser      https://www.coppel.com   gc
-#        Maximize Browser Window
-
 *** Keywords ***
 
 Ingresar a la pagina

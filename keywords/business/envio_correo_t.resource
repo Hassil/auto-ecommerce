@@ -1,20 +1,17 @@
 ***Settings***
 Resource   ../common/load_components.resource
 
-
 ***keywords***
 Ingresar un articulo
       [Arguments]    ${_articulo}
       SeleniumLibrary.Input Text    ${_frame_buscar}    ${_articulo}
       BuiltIn.Set Test Variable    ${_STEP}    Ingresar el dato ${_articulo} en el campo Buscar producto
-
+      Step    ${STEP}
 
 Buscar un articulo
       SeleniumLibrary.Click Element    ${_btn_buscar}
       BuiltIn.Set Test Variable    ${STEP}    Seleccionar boton buscar
       Step    ${STEP}
-
-
 
 Comprar un articulo
       SeleniumLibrary.Click Element    ${_btn_comprar}
@@ -22,13 +19,10 @@ Comprar un articulo
       Step    ${STEP}
       Wait Until Element Is Visible    ${_btn_continuar_compra}    ${TIMEOUT}
 
-      #
-
       SeleniumLibrary.Click Element   ${_btn_continuar_compra}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Continuar con la Compra
       Step    ${STEP}
       Wait Until Element Is Visible    ${_btn_pagar}    ${TIMEOUT}
-
 
       SeleniumLibrary.Click Element    ${_btn_pagar}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Pagar
@@ -132,6 +126,6 @@ Metodo de pago
       Step    ${STEP}
 
 
-      SeleniumLibrary.Click Element    ${_btn_confirmar_compra}
+      #SeleniumLibrary.Click Element    ${_btn_confirmar_compra}
       BuiltIn.Set Test Variable    ${STEP}    Selecionar boton Confirmar compra
       Step    ${STEP}
