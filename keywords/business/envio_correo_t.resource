@@ -108,6 +108,7 @@ Domicilio de entrega
 
 
 Metodo de pago
+      Wait Until Element Is Visible    ${_btn_metodo_pago}    ${TIMEOUT
       SeleniumLibrary.Click Element    ${_btn_metodo_pago}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Elige el Método de Pago
       Step    ${STEP}
