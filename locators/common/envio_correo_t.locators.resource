@@ -2,6 +2,7 @@
 
 ${_frame_buscar}   //input[@id="SimpleSearchForm_SearchTerm"]
 ${_btn_buscar}   //button[@data-nd2="Buscar"]
+${_img_producto}  //img[@class="product_main_image"]
 ${_btn_comprar}   //a[@id="add2CartBtn"]
 #${_btn_comprar}    //a[@id="add2CartBtn_959093"]
 #${_btn_comprarpa}   //a[@id="WC_QuickInfo_Link_addtocart"]

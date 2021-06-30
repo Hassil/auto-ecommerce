@@ -7,12 +7,14 @@ Ingresar un articulo
       SeleniumLibrary.Input Text    ${_frame_buscar}    ${_articulo}
       BuiltIn.Set Test Variable    ${_STEP}    Ingresar el dato ${_articulo} en el campo Buscar producto
       Step    ${STEP}
+      Capture Page Screenshot   articulo_buscar.png
 
 Buscar un articulo
       SeleniumLibrary.Click Element    ${_btn_buscar}
       BuiltIn.Set Test Variable    ${STEP}    Seleccionar boton buscar
       Step    ${STEP}
-
+      Wait Until Element Is Visible   ${_img_producto}   ${TIMEOUT}
+      Capture Page Screenshot   resultado_busqueda.png
 Comprar un articulo
       SeleniumLibrary.Wait Until Element Is Visible   ${_btn_comprar}   ${TIMEOUT}
       SeleniumLibrary.Click Element    ${_btn_comprar}
@@ -108,10 +110,11 @@ Domicilio de entrega
 
 
 Metodo de pago
-      Wait Until Element Is Visible    ${_btn_metodo_pago}    ${TIMEOUT
+      Wait Until Element Is Visible    ${_btn_metodo_pago}    ${TIMEOUT}
       SeleniumLibrary.Click Element    ${_btn_metodo_pago}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Elige el Método de Pago
       Step    ${STEP}
+
 
 
       SeleniumLibrary.Click Element    ${_btn_efect_establecimeinto}
