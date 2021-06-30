@@ -13,24 +13,25 @@ Buscar un articulo
       SeleniumLibrary.Click Element    ${_btn_buscar}
       BuiltIn.Set Test Variable    ${STEP}    Seleccionar boton buscar
       Step    ${STEP}
-      Wait Until Element Is Visible   ${_img_producto}   ${TIMEOUT}
+      Wait Until Element Is Visible   ${_img_producto}   ${_timeout}
       Capture Page Screenshot   resultado_busqueda.png
 Comprar un articulo
-      SeleniumLibrary.Wait Until Element Is Visible   ${_btn_comprar}   ${TIMEOUT}
+      SeleniumLibrary.Wait Until Element Is Visible   ${_btn_comprar}   ${_timeout}
+      Wait Until Element Is Enabled   ${_btn_comprar}   ${_timeout}
       SeleniumLibrary.Click Element    ${_btn_comprar}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Comprar
       Step    ${STEP}
-      SeleniumLibrary.Wait Until Element Is Visible    ${_btn_continuar_compra}    ${TIMEOUT}
+      SeleniumLibrary.Wait Until Element Is Visible    ${_btn_continuar_compra}    ${_timeout}
 
       SeleniumLibrary.Click Element   ${_btn_continuar_compra}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Continuar con la Compra
       Step    ${STEP}
-      SeleniumLibrary.Wait Until Element Is Visible    ${_btn_pagar}    ${TIMEOUT}
+      SeleniumLibrary.Wait Until Element Is Visible    ${_btn_pagar}    ${_timeout}
 
       SeleniumLibrary.Click Element    ${_btn_pagar}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Pagar
       Step    ${STEP}
-      Wait Until Element Is Visible    ${_btn_continuar}    ${TIMEOUT}
+      Wait Until Element Is Visible    ${_btn_continuar}    ${_timeout}
       SeleniumLibrary.Click Element    ${_btn_continuar}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Continuar
       Step    ${STEP}
@@ -76,7 +77,7 @@ Domicilio de entrega
 
 
       SeleniumLibrary.Click Element    ${_txt_colonia}
-      Wait Until Element Is Visible    ${_btn_lista}    ${TIMEOUT}
+      Wait Until Element Is Visible    ${_btn_lista}    ${_timeout}
       SeleniumLibrary.Click Element    ${_btn_dato_col}
     #  SeleniumLibrary.Press Keys    none  ARROW_DOWN
     #  SeleniumLibrary.Press Keys    none  ENTER
@@ -110,7 +111,7 @@ Domicilio de entrega
 
 
 Metodo de pago
-      Wait Until Element Is Visible    ${_btn_metodo_pago}    ${TIMEOUT}
+      Wait Until Element Is Visible    ${_btn_metodo_pago}    ${_timeout}
       SeleniumLibrary.Click Element    ${_btn_metodo_pago}
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar boton Elige el Método de Pago
       Step    ${STEP}
