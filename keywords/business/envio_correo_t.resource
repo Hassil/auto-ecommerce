@@ -13,8 +13,9 @@ Buscar un articulo
       SeleniumLibrary.Click Element    ${_btn_buscar}
       BuiltIn.Set Test Variable    ${STEP}    Seleccionar boton buscar
       Step    ${STEP}
-      Wait Until Element Is Visible   ${_img_producto}   ${_timeout}
+      SeleniumLibrary.Wait Until Element Is Visible   ${_img_producto}   ${_timeout}
       Capture Page Screenshot   resultado_busqueda.png
+      
 Comprar un articulo
       SeleniumLibrary.Wait Until Element Is Visible   ${_btn_comprar}   ${_timeout}
       Wait Until Element Is Enabled   ${_btn_comprar}   ${_timeout}
