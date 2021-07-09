@@ -15,7 +15,7 @@ Buscar un articulo
       Step    ${STEP}
       SeleniumLibrary.Wait Until Element Is Visible   ${_img_producto}   ${_timeout}
       Capture Page Screenshot   resultado_busqueda.png
-      
+
 Comprar un articulo
       SeleniumLibrary.Wait Until Element Is Visible   ${_btn_comprar}   ${_timeout}
       Wait Until Element Is Enabled   ${_btn_comprar}   ${_timeout}
@@ -79,7 +79,8 @@ Domicilio de entrega
 
       SeleniumLibrary.Click Element    ${_txt_colonia}
       Wait Until Element Is Visible    ${_btn_lista}    ${_timeout}
-      SeleniumLibrary.Click Element    ${_btn_dato_col}
+      Wait Until Element Is Visible   //li[contains(text(),'${_colonia}')]    ${_timeout}
+      SeleniumLibrary.Click Element    //li[contains(text(),'${_colonia}')]
     #  SeleniumLibrary.Press Keys    none  ARROW_DOWN
     #  SeleniumLibrary.Press Keys    none  ENTER
       BuiltIn.Set Test Variable    ${STEP}   Seleccionar el boton Colonia
