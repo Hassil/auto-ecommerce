@@ -1,10 +1,10 @@
 *** Variables ***
 
-${_btn_menu_inicio_sesion}            //span[@data-nd2='Inicia sesión']
-${_btn_crear_cuenta}                  //a[@data-nd3='Crear cuenta' and  @id='signOutQuickLink']
+${_btn_menu_inicio_sesion}            //a[@data-nd1='Menú superior']
+${_btn_crear_cuenta}                  //a[@id="Header_GlobalLogin_WC_AccountDisplay_links_3"]
 ${_btn_inicar_sesion}                 //a[ @id='signInQuickLink']
 ${_opcion_crear_cuenta}               Crear cuenta
-${_label_crear_cuenta}                //div[@id='WC_UserRegistrationAddForm_div_2']
+${_label_crear_cuenta}                //div[@id='WC_UserRegistrationAddForm_div_5']
 ${_opcion_iniciar_sesion}             Iniciar sesión
 ${_label_login}                       //span[ @class='login-title']
 

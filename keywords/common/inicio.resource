@@ -11,6 +11,7 @@ Seleccionar menu inicia sesión
 
 Seleccionar opción
      [Arguments]      ${opcion}    ${elemento_opcion}    ${elemento_validar}
+     SeleniumLibrary.Wait Until Element Is Visible    ${elemento_opcion}    ${_timeout}
      SeleniumLibrary.Click Element     ${elemento_opcion}
      BuiltIn.Set Test Variable    ${_STEP}      Se dió clic en la opción ${opcion}
      Step    ${_STEP}

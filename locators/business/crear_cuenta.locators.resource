@@ -7,5 +7,5 @@ ${_rb_genero_crear_cuenta}                 gender
 ${_dato_female}                            Female
 ${_dato_male}                              Male
 ${_check_terminos_crear_cuenta}            //input[@id='WC_UserRegistrationAddForm_FormInput_termAndConditions_In_Register_1']
-${_check_recibe_ofertas_crear_cuenta}      //input[@id='WC_UserRegistrationAddForm_FormInput_sendMeEmail_In_Register_1']
-${_btn_crear_cuenta}                       //button[@id='WC_UserRegistrationAddForm_links_1']
+${_check_recibe_ofertas_crear_cuenta}      //input[@id='WC_UserRegistrationAddForm_EmailOption_Checkbox_1']
+${_btn_crear_cuenta}                       //div[@id='WC_UserRegistrationAddForm_Buttons_1']
